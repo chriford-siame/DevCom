@@ -7,5 +7,4 @@
 @endsection
 
 @section('body')
-    new body
 @endsection

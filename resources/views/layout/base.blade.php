@@ -1277,7 +1277,8 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="/send/email/" method="POST" class="php-email-form">
+              @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1400,7 +1401,7 @@
   <script src="{{ url('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
   <script src="{{ url('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
   <script src="{{ url('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-  <script src="{{ url('assets/vendor/php-email-form/validate.js') }}"></script>
+  {{-- <script src="{{ url('assets/vendor/php-email-form/validate.js') }}"></script> --}}
 
   <!-- Template Main JS File -->
   <script src="{{ url('assets/js/main.js') }}"></script>
