@@ -1,12 +1,9 @@
-{
+  {
     "version": 2,
     "builds": [
       {
-        "src": "public/index.php",
-        "use": "@vercel/php",
-        "config": {
-          "installCommand": "composer install --no-dev --optimize-autoloader"
-        }
+        "src": "Dockerfile",
+        "use": "@vercel/docker"
       }
     ],
     "routes": [
@@ -14,17 +11,5 @@
         "src": "/(.*)",
         "dest": "/public/index.php"
       }
-    ],
-    "env": {
-      "APP_ENV": "production",
-      "APP_DEBUG": "false",
-      "APP_KEY": "@app_key",
-      "DB_CONNECTION": "mysql",
-      "DB_HOST": "localhost",
-      "DB_PORT": "3306",
-      "DB_DATABASE": "laravel",
-      "DB_USERNAME": "root",
-      "DB_PASSWORD": "greenlight"
-    }
+    ]
   }
-  
