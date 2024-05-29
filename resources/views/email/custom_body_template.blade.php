@@ -1,5 +1,5 @@
 
-@component('mail::message')
+{{-- @component('mail::message') --}}
 # New Property Matching Your Criteria
 
 We have found a property that matches your selected criteria:
@@ -13,5 +13,5 @@ If you're interested or need more information, please contact us.
 
 Thanks,<br>
 
-{{ config('app.name') }}
-@endcomponent
+{{-- {{ config('app.name') }} --}}
+{{-- @endcomponent --}}
