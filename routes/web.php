@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Mail\WatchlistNotifier;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::post('/send/email', function (Request $request) {
+    $request = $request->validate([
+        'email' => 'required',
+        'message' => 'required',
+        'subject' => 'required',
+    ]);
+    $current_user_email = @auth()->user()->email;
+    Illuminate\Support\Facades\Mail::send(new WatchlistNotifier($request, $current_user_email));
+    return redirect('index');
+});
 
 Route::get('/', function () {
     return view('index');
