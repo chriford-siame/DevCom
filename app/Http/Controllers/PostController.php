@@ -25,11 +25,10 @@ class PostController extends Controller
         ], 201);
         return $response;
     }
-
     public function get_posts()
     {
-        $response = Post::all();
-        return new PostResource($response);
+        // $response = Post::all();
+        // return new PostResource($response);
     }
 
     public function get_post(Post $post)

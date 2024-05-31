@@ -30,3 +30,6 @@ Route::post('/send/email', function (Request $request) {
 Route::get('/', function () {
     return view('index');
 });
+// Route::get('/docs', function () {
+//     return view('vendor.l5-swagger.index');
+// });
