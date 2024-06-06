@@ -21,24 +21,6 @@ use Illuminate\Routing\Controller as BaseController;
  *      )
  * )
  */
-/**
- * @OA\Get(
- *     path="/api/posts",
- *     operationId="getUsersList",
- *     tags={"Posts"},
- *     summary="Get list of posts",
- *     description="Returns list of posts",
- *     @OA\Response(
- *         response=200,
- *         description="successful operation",
- *         @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/Post"))
- *     ),
- *     @OA\Response(
- *         response=400,
- *         description="Bad request"
- *     )
- * )
- */
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

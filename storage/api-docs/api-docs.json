@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 Swagger API Documentation",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "support@example.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/posts": {
+            "get": {
+                "operationId": "d52ade3018be6b52a39bcd0b31683d62",
+                "responses": {
+                    "200": {
+                        "description": "A post method"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "baf8cac15d91a1a40b6e93db73700dfa",
+                "responses": {
+                    "201": {
+                        "description": "Gets and fetches all the posts in the table."
+                    }
+                }
+            }
+        }
+    }
+}
