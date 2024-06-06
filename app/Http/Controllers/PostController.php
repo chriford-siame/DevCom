@@ -36,25 +36,25 @@ use Illuminate\Support\Facades\DB;
 class PostController extends Controller
 {
 
-    /**
-     * @OA\Post(
-     *     path="/api/posts",
-     *     summary="Create a new post",
-     *     description="Creates a new post and returns the created post",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             required={"title", "description"},
-     *             @OA\Property(property="title", type="string", example="John Doe"),
-     *             @OA\Property(property="description", type="string", format="email", example="john.doe@example.com"),
-     *         ),
-     *     ),
-     *     @OA\Response(
-     *         response=201,
-     *         description="post created",
-     *         @OA\JsonContent(ref="#/components/schemas/Post")
-     *     )
-     */ 
+    // /**
+    //  * @OA\Post(
+    //  *     path="/api/posts",
+    //  *     summary="Create a new post",
+    //  *     description="Creates a new post and returns the created post",
+    //  *     @OA\RequestBody(
+    //  *         required=true,
+    //  *         @OA\JsonContent(
+    //  *             required={"title", "description"},
+    //  *             @OA\Property(property="title", type="string", example="John Doe"),
+    //  *             @OA\Property(property="description", type="string", format="email", example="john.doe@example.com"),
+    //  *         ),
+    //  *     ),
+    //  *     @OA\Response(
+    //  *         response=201,
+    //  *         description="post created",
+    //  *         @OA\JsonContent(ref="#/components/schemas/Post")
+    //  *     )
+    //  */ 
     public function post_create(Request $request)
     {
         $post_data = $request->validate([

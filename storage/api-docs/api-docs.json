@@ -21,14 +21,29 @@
                         "description": "A post method"
                     }
                 }
-            },
-            "post": {
-                "operationId": "baf8cac15d91a1a40b6e93db73700dfa",
-                "responses": {
-                    "201": {
-                        "description": "Gets and fetches all the posts in the table."
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "User": {
+                "title": "User",
+                "description": "User Model",
+                "properties": {
+                    "id": {
+                        "description": "User ID",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "User name",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "User email",
+                        "type": "string"
                     }
-                }
+                },
+                "type": "object"
             }
         }
     }
