@@ -60,7 +60,7 @@ class PostController extends Controller
         $post_data = $request->validate([
             "title" => ["required", "max:50", "min:1"],
             "body" => ["required", "max:800"],
-        ]);    
+        ]);
         $post = new Post;
         $post->title = $request->title;
         $post->body = $request->body;
@@ -68,9 +68,9 @@ class PostController extends Controller
         $response = response()->json([
             "data" => $post,
             "message" => "Post created successfully",
-        ], 201);    
+        ], 201);
         return $response;
-    }    
+    }
 
     /**
      * @OA\Get(
@@ -120,6 +120,19 @@ class PostController extends Controller
             return $response;
         }
     }
+
+    /**
+     * @OA\Delete(
+     *     path="/api/posts/delete/{id}",
+     * @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={"id"},
+     *             @OA\Property(property="post", type="string", example="1"),
+     *         ),
+     *     ),
+     * )
+     */
     public function delete_post(Post $post)
     {
         if (Post::where("id", $post)->exists()) {
