@@ -41,13 +41,13 @@
             <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1>[Company Name]<span>.</span></h1>
+                <h1>DevCom<span>.</span></h1>
             </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
 
-                    <li class="dropdown"><a href="#"><span>Home</span> <i
+                    {{-- <li class="dropdown"><a href="#"><span>Home</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="index.html" class="active">Home 1 - index.html</a></li>
@@ -55,57 +55,14 @@
                             <li><a href="index-3.html">Home 3 - index-3.html</a></li>
                             <li><a href="index-4.html">Home 4 - index-4.html</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
 
+                    <li><a class="nav-link scrollto" href="index.html#about">Home</a></li>
                     <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li>
-                                <a href="#">Column 1 link 1</a>
-                                <a href="#">Column 1 link 2</a>
-                                <a href="#">Column 1 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 2 link 1</a>
-                                <a href="#">Column 2 link 2</a>
-                                <a href="#">Column 3 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 3 link 1</a>
-                                <a href="#">Column 3 link 2</a>
-                                <a href="#">Column 3 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 4 link 1</a>
-                                <a href="#">Column 4 link 2</a>
-                                <a href="#">Column 4 link 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="nav-link scrollto" href="index.html#faq">FAQs</a></li>
+                    {{-- <li><a href="blog.html">Blog</a></li> --}}
                     <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -120,7 +77,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
             data-aos="zoom-out">
             <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated">
-            <h2>Welcome to <span>[Company Name]</span></h2>
+            <h2>Welcome to <span>DevCom</span></h2>
             <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
             <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -133,7 +90,7 @@
 
     <main id="main">
 
-        <!-- ======= Featured Services Section ======= -->
+        {{-- <!-- ======= Featured Services Section ======= -->
         <section id="featured-services" class="featured-services">
             <div class="container">
 
@@ -173,20 +130,66 @@
                 </div>
 
             </div>
-        </section><!-- End Featured Services Section -->
+        </section><!-- End Featured Services Section --> --}}
 
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-header">
-                    <h2>About Us</h2>
-                    <p>
-                        At [Your Company Name], we specialize in creating dynamic, user-friendly websites that drive
-                        success. Our expert team blends creativity and technology to deliver tailored web solutions,
-                        ensuring your online presence stands out. From design to deployment, we're dedicated to helping
-                        your business thrive in the digital world.</p>
-                </div>
+
+                <section id="features" class="features">
+                    <div class="container" data-aos="fade-up">
+
+                        <div class="section-header text-muted">
+                            <h2 class="text-center">About Us</h2>
+                        </div>
+                        <ul class="nav nav-tabs row gy-4 d-flex">
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                                    <i class="bi bi-binoculars color-cyan"></i>
+                                    <h4>Websites</h4>
+                                </a>
+                            </li><!-- End Tab 1 Nav -->
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                                    <i class="bi bi-box-seam color-indigo"></i>
+                                    <h4>Mobile Apps</h4>
+                                </a>
+                            </li><!-- End Tab 2 Nav -->
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                                    <i class="bi bi-brightness-high color-teal"></i>
+                                    <h4>SEO</h4>
+                                </a>
+                            </li><!-- End Tab 3 Nav -->
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                                    <i class="bi bi-command color-red"></i>
+                                    <h4 class="text-center">Payment Gateways</h4>
+                                </a>
+                            </li><!-- End Tab 4 Nav -->
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+                                    <i class="bi bi-easel color-blue"></i>
+                                    <h4>Courses</h4>
+                                </a>
+                            </li><!-- End Tab 5 Nav -->
+
+                            <li class="nav-item col-6 col-md-4 col-lg-2">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+                                    <i class="bi bi-map color-orange"></i>
+                                    <h4>Dynamics 365</h4>
+                                </a>
+                            </li><!-- End Tab 6 Nav -->
+
+                        </ul>
+                    </div>
+                </section>
 
                 <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
@@ -318,22 +321,22 @@
 
                 <div class="clients-slider swiper">
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid"
-                                alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/ecobank.jpeg" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/fis-logo.png" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/ecobank.jpeg" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/fis-logo.png" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/ecobank.jpeg" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/fis-logo.png" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/ecobank.jpeg" height="20"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/logos/fis-logo.png" height="20"
+                                class="img-fluid" alt=""></div>
                     </div>
                 </div>
 
@@ -348,11 +351,14 @@
 
                     <div
                         class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>Alias sunt quas <em>Cupiditate</em> oluptas hic minima</h3>
-                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
-                        <a class="cta-btn align-self-start" href="#">Call To Action</a>
+                        <h3>From digital dreams into <em>reality</em></h3>
+                        <p>
+                            We believe in the power of innovation and creativity to build systems
+                            that not only look stunning but also drive success. Let’s create something extraordinary
+                            together, turning your vision into a captivating online experience that stands out in the
+                            digital world.
+                          </p>
+                        <a class="cta-btn align-self-start" href="#">Contact</a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -367,7 +373,7 @@
         </section><!-- End Call To Action Section -->
 
         <!-- ======= On Focus Section ======= -->
-        <section id="onfocus" class="onfocus">
+        {{-- <section id="onfocus" class="onfocus">
             <div class="container-fluid p-0" data-aos="fade-up">
 
                 <div class="row g-0">
@@ -398,9 +404,9 @@
                 </div>
 
             </div>
-        </section><!-- End On Focus Section -->
+        </section><!-- End On Focus Section --> --}}
 
-        <!-- ======= Features Section ======= -->
+        {{-- <!-- ======= Features Section ======= -->
         <section id="features" class="features">
             <div class="container" data-aos="fade-up">
 
@@ -409,42 +415,42 @@
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
                             <i class="bi bi-binoculars color-cyan"></i>
-                            <h4>Modinest</h4>
+                            <h4>Websites</h4>
                         </a>
                     </li><!-- End Tab 1 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
                             <i class="bi bi-box-seam color-indigo"></i>
-                            <h4>Undaesenti</h4>
+                            <h4>Mobile Apps</h4>
                         </a>
                     </li><!-- End Tab 2 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
                             <i class="bi bi-brightness-high color-teal"></i>
-                            <h4>Pariatur</h4>
+                            <h4>SEO</h4>
                         </a>
                     </li><!-- End Tab 3 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
                             <i class="bi bi-command color-red"></i>
-                            <h4>Nostrum</h4>
+                            <h4>Payment Gateways</h4>
                         </a>
                     </li><!-- End Tab 4 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
                             <i class="bi bi-easel color-blue"></i>
-                            <h4>Adipiscing</h4>
+                            <h4>Courses</h4>
                         </a>
                     </li><!-- End Tab 5 Nav -->
 
                     <li class="nav-item col-6 col-md-4 col-lg-2">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
                             <i class="bi bi-map color-orange"></i>
-                            <h4>Reprehit</h4>
+                            <h4>Dynamics 365</h4>
                         </a>
                     </li><!-- End Tab 6 Nav -->
 
@@ -649,7 +655,7 @@
                 </div>
 
             </div>
-        </section><!-- End Features Section -->
+        </section><!-- End Features Section --> --}}
 
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
@@ -658,9 +664,8 @@
                 <div class="section-header">
                     <h2>Our Services</h2>
                     <p>
-                        We offer comprehensive services including SEO to boost your online visibility, , mobile app
-                        development for seamless user experiences, and
-                        ongoing maintenance to ensure your digital platforms run smoothly and efficiently.
+                        We offer comprehensive services including SEO, Website & Mobile app development, maintenance and
+                        many more.
                     </p>
                 </div>
 
@@ -699,8 +704,9 @@
                                     <h3>Mobile Apps</h3>
                                 </a>
                                 <p>
-                                    Interested in owning a mobile app? You are on the right place mobile app
-                                </p><br>
+                                    We develop intuitive and high-performing mobile apps, ensuring seamless user
+                                    experiences across all devices, tailored to meet your business needs.
+                                </p>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
@@ -738,7 +744,8 @@
                                     <h3>Payment Gateways</h3>
                                 </a>
                                 <p>
-                                  Having trouble integrating payment gateways to your application? Well, what are you waiting for? We're here to help. 
+                                    Having trouble integrating payment gateways to your application? What are you
+                                    waiting for? We're here to help.
                                 </p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
@@ -755,10 +762,11 @@
                                     <i class="bi bi-calendar4-week"></i>
                                 </div>
                                 <a href="#" class="stretched-link">
-                                    <h3></h3>
+                                    <h3>Courses</h3>
                                 </a>
-                                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut.
-                                    Sed animi at autem alias eius labore.</p>
+                                <p>
+                                    We provide courses and mentorship in Frontend, Backend and Mobile Development.
+                                </p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
@@ -774,28 +782,17 @@
                                     <i class="bi bi-chat-square-text"></i>
                                 </div>
                                 <a href="#" class="stretched-link">
-                                    <h3>Dolori Architecto</h3>
+                                    <h3>Dynamics 365</h3>
                                 </a>
                                 <p>
-                                  Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
-                                    Corrupti recusandae ducimus enim.
-                                  </p>
-                                <a href="#" class="stretched-link"></a>
+                                    Among other several services, we also do microsoft chatbot customization
+                                </p>
+                                <a href="#" class="stretched-link"></a><br>
                             </div>
                         </div>
                     </div><!-- End Service Item -->
 
                 </div>
-
-                <div class="section-header">
-                  <h2>Freelance Services</h2>
-                  <p>
-                      We offer comprehensive services including SEO to boost your online visibility, mobile app
-                      development for seamless user experiences, and
-                      ongoing maintenance to ensure your digital platforms run smoothly and efficiently.
-                  </p>
-              </div>
-
             </div>
         </section><!-- End Services Section -->
 
@@ -918,7 +915,7 @@
             </div>
         </section><!-- End Testimonials Section -->
 
-        <!-- ======= Pricing Section ======= -->
+        {{-- <!-- ======= Pricing Section ======= -->
         <section id="pricing" class="pricing">
             <div class="container" data-aos="fade-up">
 
@@ -1006,7 +1003,7 @@
                 </div>
 
             </div>
-        </section><!-- End Pricing Section -->
+        </section><!-- End Pricing Section --> --}}
 
         <!-- ======= F.A.Q Section ======= -->
         <section id="faq" class="faq">
@@ -1133,7 +1130,7 @@
             </div>
         </section><!-- End F.A.Q Section -->
 
-        <!-- ======= Portfolio Section ======= -->
+        {{-- <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio" data-aos="fade-up">
 
             <div class="container">
@@ -1310,7 +1307,7 @@
                 </div>
 
             </div>
-        </section><!-- End Portfolio Section -->
+        </section><!-- End Portfolio Section --> --}}
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team">
@@ -1318,8 +1315,12 @@
 
                 <div class="section-header">
                     <h2>Our Team</h2>
-                    <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam
-                        voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+                    <p>
+                        A dynamic group of professionals dedicated to excellence. Each member brings unique expertise,
+                        fostering innovation and collaboration. Together, we deliver top-tier solutions, ensuring your
+                        projects exceed expectations. Meet the talented individuals who drive our success and see the
+                        passion behind every achievement.
+                    </p>
                 </div>
 
                 <div class="row gy-5">
@@ -1383,7 +1384,7 @@
             </div>
         </section><!-- End Team Section -->
 
-        <!-- ======= Recent Blog Posts Section ======= -->
+        {{-- <!-- ======= Recent Blog Posts Section ======= -->
         <section id="recent-blog-posts" class="recent-blog-posts">
 
             <div class="container" data-aos="fade-up">
@@ -1448,7 +1449,7 @@
 
             </div>
 
-        </section><!-- End Recent Blog Posts Section -->
+        </section><!-- End Recent Blog Posts Section --> --}}
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
@@ -1456,17 +1457,17 @@
 
                 <div class="section-header">
                     <h2>Contact Us</h2>
-                    <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad
-                        dolores adipisci aliquam.</p>
+                    {{-- <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad
+                        dolores adipisci aliquam.</p> --}}
                 </div>
 
             </div>
 
-            <div class="map">
+            {{-- <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
                     frameborder="0" allowfullscreen></iframe>
-            </div><!-- End Google Maps -->
+            </div><!-- End Google Maps --> --}}
 
             <div class="container">
 
@@ -1491,7 +1492,7 @@
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
                                     <h4>Email:</h4>
-                                    <p>info@example.com</p>
+                                    <p>devsiame@gmail.com</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -1552,7 +1553,7 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>[Company Name]</h3>
+                            <h3>Devcom</h3>
                             <p>
                                 A108 Adam Street <br>
                                 NY 535022, USA<br><br>
@@ -1603,7 +1604,7 @@
 
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     <div class="copyright">
-                        &copy; Copyright <strong><span>[Company Name]</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span>DevCom</span></strong>. All Rights Reserved
                     </div>
                     <div class="credits">
                         <!-- All the links in the footer should remain intact. -->
