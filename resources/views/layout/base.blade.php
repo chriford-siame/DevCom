@@ -76,8 +76,8 @@
     <section id="hero-animated" class="hero-animated d-flex align-items-center">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
             data-aos="zoom-out">
-            <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated">
-            <h2>Welcome to <span>Protel</span></h2>
+            {{-- <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated"> --}}
+            <h2>Welcome to <span class="animated">DevCom</span></h2>
             <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
             <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -132,15 +132,15 @@
         </section><!-- End Featured Services Section --> --}}
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about pt-0 mt-0">
             <div class="container" data-aos="fade-up">
 
 
                 <section id="features" class="features">
                     <div class="container" data-aos="fade-up">
 
-                        <div class="section-header text-muted">
-                            <h2 class="text-center">About Us</h2>
+                        <div class="section-header text-muted mt-0 pt-0">
+                            <h3 class="text-start">Our primary goal</h3>
                         </div>
                         <ul class="nav nav-tabs row gy-4 d-flex">
 
@@ -190,7 +190,7 @@
                     </div>
                 </section>
 
-                <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+                {{-- <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
                     <div class="col-lg-5">
                         <div class="about-img">
@@ -309,13 +309,13 @@
 
                     </div>
 
-                </div>
+                </div> --}}
 
             </div>
         </section><!-- End About Section -->
 
         <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients">
+        {{-- <section id="clients" class="clients">
             <div class="container" data-aos="zoom-out">
 
                 <div class="clients-slider swiper">
@@ -340,7 +340,8 @@
                 </div>
 
             </div>
-        </section><!-- End Clients Section -->
+        </section> --}}
+        <!-- End Clients Section -->
 
         <!-- ======= Call To Action Section ======= -->
         <section id="cta" class="cta">
