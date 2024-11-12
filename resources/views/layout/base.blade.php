@@ -57,11 +57,11 @@
                         </ul>
                     </li> --}}
 
-                    <li><a class="nav-link scrollto" href="index.html#about">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#hero-animated">Home</a></li>
                     <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#faq">FAQs</a></li>
+                    {{-- <li><a class="nav-link scrollto" href="index.html#faq">FAQs</a></li> --}}
                     {{-- <li><a href="blog.html">Blog</a></li> --}}
                     <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
                 </ul>
@@ -77,7 +77,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
             data-aos="zoom-out">
             <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated">
-            <h2>Welcome to <span>DevCom</span></h2>
+            <h2>Welcome to <span>Protel</span></h2>
             <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
             <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -93,7 +93,6 @@
         {{-- <!-- ======= Featured Services Section ======= -->
         <section id="featured-services" class="featured-services">
             <div class="container">
-
                 <div class="row gy-4">
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
                         <div class="service-item position-relative">
@@ -128,7 +127,7 @@
                     </div><!-- End Service Item -->
 
                 </div>
-
+ 
             </div>
         </section><!-- End Featured Services Section --> --}}
 
@@ -797,7 +796,7 @@
         </section><!-- End Services Section -->
 
         <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials">
+        {{-- <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
 
                 <div class="testimonials-slider swiper">
@@ -913,7 +912,8 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section -->
+        </section> --}}
+        <!-- End Testimonials Section -->
 
         {{-- <!-- ======= Pricing Section ======= -->
         <section id="pricing" class="pricing">
@@ -1006,7 +1006,7 @@
         </section><!-- End Pricing Section --> --}}
 
         <!-- ======= F.A.Q Section ======= -->
-        <section id="faq" class="faq">
+        {{-- <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
 
                 <div class="row gy-4">
@@ -1128,7 +1128,8 @@
                 </div>
 
             </div>
-        </section><!-- End F.A.Q Section -->
+        </section> --}}
+        <!-- End F.A.Q Section -->
 
         {{-- <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio" data-aos="fade-up">
@@ -1500,7 +1501,7 @@
                                 <i class="bi bi-phone flex-shrink-0"></i>
                                 <div>
                                     <h4>Call:</h4>
-                                    <p>+1 5589 55488 55</p>
+                                    <p>(+260) 762412680</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -1584,16 +1585,6 @@
                             <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-
-                    </div>
-
                 </div>
             </div>
         </div>
