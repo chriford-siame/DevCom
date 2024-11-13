@@ -74,11 +74,13 @@
     </header><!-- End Header -->
 
     <section id="hero-animated" class="hero-animated d-flex align-items-center">
-        <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+        <div class="container py-0 d-flex flex-column justify-content-center align-items-center text-center position-relative"
             data-aos="zoom-out">
-            {{-- <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated"> --}}
+            <span class="">
+                <img src="{{ asset('assets/img/hero-image2.png') }}" class="img-fluid animated" />
+            </span>
             <h2>Welcome to <span class="animated">DevCom</span></h2>
-            <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
+            <p>A place that turns digital dreams into reality now at your finger tips</p>
             <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -1479,16 +1481,16 @@
 
                         <div class="info">
                             <h3>Get in touch</h3>
-                            <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia
-                                commodi minus.</p>
+                            <p></p>
 
-                            <div class="info-item d-flex">
+                            {{-- <div class="info-item d-flex">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                                 <div>
                                     <h4>Location:</h4>
                                     <p>A108 Adam Street, New York, NY 535022</p>
                                 </div>
-                            </div><!-- End Info Item -->
+                            </div> --}}
+                            <!-- End Info Item -->
 
                             <div class="info-item d-flex">
                                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -1502,7 +1504,7 @@
                                 <i class="bi bi-phone flex-shrink-0"></i>
                                 <div>
                                     <h4>Call:</h4>
-                                    <p>(+260) 762412680</p>
+                                    <p>(+260) 762-412-680</p>
                                 </div>
                             </div><!-- End Info Item -->
 
