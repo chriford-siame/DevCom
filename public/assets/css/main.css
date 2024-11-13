@@ -562,7 +562,7 @@ section {
   background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
-  padding: 120px 0 60px;
+  padding: 120px 0 30px;
 }
 
 .hero-animated h2 {
